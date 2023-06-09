@@ -1,0 +1,14 @@
+<h2>List of popular dogs</h2>
+
+<table aria-describedby="Table with list of popular dogs">
+  <thead>
+      <th>ID</th>
+      <th>Name</th>
+  </thead>
+  <tbody>
+      <tr *ngFor="let dog of dogs">
+        <td>{{dog.id}}</td>
+        <td>{{dog.name}}</td>
+      </tr>
+  </tbody>
+</table>
