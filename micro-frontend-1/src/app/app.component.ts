@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -6,28 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'micro-frontend-1';
 
-  dogs = [
-    {
-      id: 1,
-      name: 'Bulldog'
-    },
-    {
-      id: 2,
-      name: 'Beagle'
-    },
-    {
-      id: 3,
-      name: 'Yorkshire Terrier'
-    },
-    {
-      id: 4,
-      name: 'Cavalier King Charles Spaniel'
-    },
-    {
-      id: 5,
-      name: 'English Springer Spaniel'
-    }
-  ]
+  dogs: any = []
+  URL_API = "http://localhost:3000/dogs";
+
+  constructor(private http: HttpClient) { }
+
+  getDogs() {
+    this.http.get<any>(this.URL_API).subscribe(data => {
+      this.dogs = data;
+    })
+  }
+
 }
