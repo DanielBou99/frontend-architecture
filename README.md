@@ -13,3 +13,7 @@ I created this repo to test micro frontend functionality in angular.
 </body>
 ```
 5- Exec the application *npx http-server -p 4200*  
+
+## main-project  
+1- Go to *cd main-project/*  
+2- Run the application *ng s --o*  

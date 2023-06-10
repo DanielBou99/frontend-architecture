@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  microFrontend1 = 'http://localhost:4200/';
+  microFrontend1 = 'http://localhost:4200/micro-frontend-1.js';
 }
