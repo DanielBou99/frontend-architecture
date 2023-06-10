@@ -1,1 +1,10 @@
-<micro-frontend-1 *axLazyElement="microFrontend1"></micro-frontend-1>
+<div class="micro-frontend-1">
+  <h1>Micro Frontend 1</h1>
+  <micro-frontend-1
+    *axLazyElement="microFrontend1;
+    errorTemplate: error;
+    loadingTemplate: loading">
+  </micro-frontend-1>
+  <ng-template #error>Error to load Micro FrontEnd 1</ng-template>
+  <ng-template #loading>Loading Micro FrontEnd 1...</ng-template>
+</div>
