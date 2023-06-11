@@ -19,7 +19,8 @@ I created this repo to test micro frontend functionality in angular.
 </body>
 ```
 5- Exec the application *npx http-server -p 4200*  
-
+6- Important: This command by default send in the header cache-control 3600 (seconds). Exec *npx http-server -p 4444 -c-1* to disable caching.  
+  
 ## main-project  
 1- Go to *cd main-project/*  
 2- Exec *npm i*  
