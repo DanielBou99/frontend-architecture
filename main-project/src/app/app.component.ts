@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +12,16 @@ export class AppComponent {
   countEventReceived: number = 0;
   lastMessage: string = '';
 
+  constructor(private cookieService: CookieService) {
+
+  }
+
   buttonClickedEvent(change: any) {
     this.countEventReceived += 1;
     this.lastMessage = change.detail;
+  }
+
+  setCookie() {
+    this.cookieService.set('animal', this.lastMessage);
   }
 }
