@@ -3,8 +3,15 @@
   <micro-frontend-1
     *axLazyElement="microFrontend1;
     errorTemplate: error;
-    loadingTemplate: loading">
+    loadingTemplate: loading"
+    [descriptionButton]="descriptionButton"
+    (buttonClickedEvent)="buttonClickedEvent($event)"
+    >
   </micro-frontend-1>
   <ng-template #error>Error to load Micro FrontEnd 1</ng-template>
   <ng-template #loading>Loading Micro FrontEnd 1...</ng-template>
+  <div>
+    <p>Total received events: {{countEventReceived}}</p>
+    <p>Last message: {{lastMessage}}</p>
+  </div>
 </div>
