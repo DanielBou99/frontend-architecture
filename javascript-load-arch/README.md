@@ -1,10 +1,5 @@
 # micro-frontend-angular  
 I created this repo to test micro frontend functionality in angular.  
-
-## backend  
-1- Go to *cd backend/*  
-2- Exec *npm i*  
-3- Run the server *npm run start*  
   
 ## micro-frontend-1  
 1- Go to *cd micro-frontend-1/*  
