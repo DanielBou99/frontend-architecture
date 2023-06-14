@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { createCustomElement } from '@angular/elements';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AnimalsListComponent } from './animals-list/animals-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnimalsListComponent
   ],
   imports: [
     BrowserModule,
@@ -20,10 +22,10 @@ export class AppModule {
   constructor(private injector: Injector) {}
 
   ngDoBootstrap() {
-    const element = createCustomElement(AppComponent, {
+    const element = createCustomElement(AnimalsListComponent, {
       injector: this.injector,
     });
-    customElements.define('micro-frontend-1', element);
+    customElements.define('app-animals-list', element);
   }
 }
 

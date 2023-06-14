@@ -1,13 +1,13 @@
 <div class="micro-frontend-1">
   <h1>Micro Frontend 1</h1>
-  <micro-frontend-1
+  <app-animals-list
     *axLazyElement="microFrontend1;
     errorTemplate: error;
     loadingTemplate: loading"
     [descriptionButton]="descriptionButton"
     (buttonClickedEvent)="buttonClickedEvent($event)"
     >
-  </micro-frontend-1>
+  </app-animals-list>
   <ng-template #error>Error to load Micro FrontEnd 1</ng-template>
   <ng-template #loading>Loading Micro FrontEnd 1...</ng-template>
 </div>

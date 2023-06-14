@@ -1,13 +1,13 @@
-import { CookieService } from 'ngx-cookie-service';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-animals-list',
+  templateUrl: './animals-list.component.html',
+  styleUrls: ['./animals-list.component.css']
 })
-export class AppComponent {
+export class AnimalsListComponent {
 
   dogs: any = []
   URL_API = "http://localhost:3000/dogs";
