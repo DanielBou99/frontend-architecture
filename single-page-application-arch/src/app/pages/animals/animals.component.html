@@ -1,1 +1,18 @@
-<p>animals works!</p>
+<section class="container">
+  <h1>Animals</h1>
+  <table class="table">
+    <caption>List of animals</caption>
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of dogs">
+      <tr>
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.name}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
