@@ -1,6 +1,3 @@
-# micro-frontend-angular  
-I created this repo to test micro frontend functionality in angular.  
-  
 ## micro-frontend-1  
 1- Go to *cd micro-frontend-1/*  
 2- Exec *npm i*  
